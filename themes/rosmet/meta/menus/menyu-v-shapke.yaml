@@ -1,0 +1,68 @@
+items:
+    -
+        title: Главная
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: index
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'О компании'
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: o-kompanii
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Продукция
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: produkciya
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Вакансии
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: vakansii
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Экологическая политика'
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: ekologicheskaya-politika
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Контакты
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: kontakty
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Меню в шапке'

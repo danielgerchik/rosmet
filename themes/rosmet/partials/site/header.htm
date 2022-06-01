@@ -1,0 +1,22 @@
+[staticMenu headerMenu]
+code = "menyu-v-shapke"
+==
+
+<div class="header__container">
+        <div class="header__row">
+            <div class="header__logo"><a href="/"><img src="{{ 'assets/images/dest/logo.png'|theme }}" alt="Росметаллургия"></a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            {% if headerMenu.menuItems %}
+            <nav class="header__menu">
+                <ul class="header__list">
+                    {% for item in headerMenu.menuItems %}
+                    <li class="header__item"><a href="{{ item.url }}" class="header__link">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            {% endif %}
+        </div>
+    </div>

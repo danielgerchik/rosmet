@@ -1,0 +1,41 @@
+[staticMenu footerMenu]
+code = "menyu-v-podvale"
+==
+<div class="footer__container">
+        <div class="footer__main">
+            <div class="footer__block footer__block_logo"><a href="/"><img src="{{ 'assets/images/dest/logo.png'|theme }}" alt="Росметаллургия"></a></div>
+            {% if footerMenu.menuItems %}
+            <nav class="footer__block footer__block_menu">
+                <div class="footer__label">Меню</div>
+                <ul class="footer__items footer__items_menu">
+                    {% for item in footerMenu.menuItems %}
+                    <li class="footer__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            {% endif %}
+            <div class="footer__block footer__block_requisites">
+                <div class="footer__label">Реквизиты</div>
+                <div class="footer__items">
+                    <div class="footer__item"><span>ОГРН</span> 1089847321321</div>
+                    <div class="footer__item"><span>ИНН</span>/<span>КПП</span> 7816448625 / 784201001</div>
+                    <div class="footer__item footer__item_address">
+                        <span>Юридический адрес</span>
+                        191024, город Санкт-Петербург, Мытнинская улица, дом 12/44 
+                        литера а, помещение 13н</div>
+                </div>
+            </div>
+            <div class="footer__block footer__block_contacts">
+                <div class="footer__label">Контакты</div>
+                <div class="footer__items">
+                    <div class="footer__item"><a href="tel:78123196047">+7 (812) 319-60-47</a></div>
+                    <div class="footer__item"><a href="mailto:info@rosmetal.pro">info@rosmetal.pro</a></div>
+                    <div class="footer__item">Калужская Область, г. Обнинск, Киевское шоссе, д. 57</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bot">
+            <div class="footer__rights footer__bot-item">Все права защищены. 2022</div>
+            <div class="footer__policy footer__bot-item"><a href="#">Политика конфиденциальности</a></div>
+        </div>
+    </div>
